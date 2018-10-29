@@ -16,8 +16,8 @@
 
 下面的这个移动端页面整体内容则用了rem计算大小，less编译css文件，轮播图是用了移动端的轻量级插件zepto做的
 
-![less.txt]()
+![less.txt](https://github.com/cao-lianhui/Mobile-Web/blob/master/mobile-web-test/Less.txt)
 
 效果图：
 
-![效果图]()
+![效果图](https://github.com/cao-lianhui/Mobile-Web/blob/master/mobile-web-test/gif/mobile-gif.gif)
