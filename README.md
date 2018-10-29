@@ -16,6 +16,21 @@
 
 下面的这个移动端页面整体内容则可以自适应，用rem计算整体内容的大小，less编译css文件，轮播图是用了移动端的轻量级插件zepto.
 
+zepto插件:
+      fx.js：提供动画
+      
+      touch.js：提供触摸事件
+
+less模块有：
+
+      adapter.less:主要解决移动端响应式问题，用了媒体查询@media，还有less语法中的函数，循环。
+      
+      index.less:主要的页面index样式的
+      
+      main.less:导入了上面两个less文件
+       
+      编译:lessc main.less index.css，编译器版本为1.6.3,系统为linuxmint
+      
 ![less.txt](https://github.com/cao-lianhui/Mobile-Web/blob/master/mobile-web-test/Less.txt)
 
 效果图：
