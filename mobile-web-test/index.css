@@ -1,0 +1,318 @@
+﻿@charset "utf-8";
+
+@media (min-width: 320px) {
+	html {
+		font-size: 42.66666667px;
+	}
+}
+
+@media (min-width: 360px) {
+	html {
+		font-size: 48px;
+	}
+}
+
+@media (min-width: 375px) {
+	html {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 384px) {
+	html {
+		font-size: 51.2px;
+	}
+}
+
+@media (min-width: 400px) {
+	html {
+		font-size: 53.33333333px;
+	}
+}
+
+@media (min-width: 414px) {
+	html {
+		font-size: 55.2px;
+	}
+}
+
+@media (min-width: 424px) {
+	html {
+		font-size: 56.53333333px;
+	}
+}
+
+@media (min-width: 450px) {
+	html {
+		font-size: 60px;
+	}
+}
+
+@media (min-width: 480px) {
+	html {
+		font-size: 64px;
+	}
+}
+
+@media (min-width: 540px) {
+	html {
+		font-size: 72px;
+	}
+}
+
+@media (min-width: 640px) {
+	html {
+		font-size: 85.33333333px;
+	}
+}
+
+@media (min-width: 720px) {
+	html {
+		font-size: 96px;
+	}
+}
+
+@media (min-width: 750px) {
+	html {
+		font-size: 100px;
+	}
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd,
+dt {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei", "sans-serif";
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.f-l {
+	float: left;
+}
+
+.f-r {
+	float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+
+.m-container {
+	width: 100%;
+	max-width: 750px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding-top: 0.9rem;
+	padding-bottom: 1rem;
+  /*background:@mColor;*/
+}
+
+.m-search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 0.9rem;
+	background: #fabc09;
+}
+
+.m-search a {
+	position: absolute;
+	top: 0;
+  /*border:1px solid black;*/
+	width: 0.9rem;
+	height: 0.9rem;
+	text-align: center;
+	color: black;
+	line-height: 0.9rem;
+	font-size: 0.26rem;
+}
+
+.m-search a.m-category {
+	left: 0;
+  /*background:url("images/search1.png") no-repeat center / 44rem/@baseSize 33rem/@baseSize;*/
+}
+
+.m-search a.m-shop {
+	right: 0;
+}
+
+.m-search form {
+	width: 100%;
+	height: 100%;
+	padding: 0 0.9rem;
+}
+
+.m-search form .icon-search {
+	position: absolute;
+	left: 1rem;
+	top: 0.3rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: url("images/search3.png") no-repeat center / 0.3rem 0.3rem;
+}
+
+.m-search form input {
+	width: 100%;
+	height: 0.6rem;
+	margin-top: 0.15rem;
+	border: none;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 0.08rem;
+	font-size: 0.24rem;
+	out-line: none;
+	padding-left: 0.5rem;
+}
+
+.m-banner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.m-banner ul:first-child {
+	width: 1000%;
+}
+
+.m-banner ul:first-child li {
+	width: 10%;
+	float: left;
+}
+
+.m-banner ul:first-child li a {
+	display: block;
+	width: 100%;
+}
+
+.m-banner ul:first-child li a img {
+	display: block;
+	width: 100%;
+	height: 3.2rem;
+}
+
+.m-banner ul:last-child {
+	position: absolute;
+	right: 0.2rem;
+	bottom: 0.2rem;
+}
+
+.m-banner ul:last-child li {
+	float: left;
+	width: 0.12rem;
+	height: 0.12rem;
+	margin-left: 0.12rem;
+	border-radius: 50%;
+	background: white;
+}
+
+.m-banner ul:last-child li.active {
+	background: #fabc09;
+}
+/*导航*/
+.m-nav {
+	width: 100%;
+}
+
+.m-nav ul {
+	width: 100%;
+	padding: 0.2rem 0;
+}
+
+.m-nav ul li {
+	width: 20%;
+	float: left;
+}
+
+.m-nav ul li a {
+	display: block;
+	width: 100%;
+}
+
+.m-nav ul li a img {
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.m-nav ul li a p {
+	font-size: 0.24rem;
+	padding: 0.12rem 0;
+	text-align: center;
+	color: #666;
+}
+/*底部导航*/
+.m-tabs {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1rem;
+	background: white;
+	border-top: 1px solid #ccc;
+}
+
+.m-tabs ul {
+	width: 100%;
+}
+
+.m-tabs ul li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.m-tabs ul li a {
+  /*dispaly:block;*/
+}
+
+.m-tabs ul li a span {
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #333;
+	margin: 0.1rem auto;
+}
+
+.m-tabs ul li a p {
+	color: #666;
+	font-size: 0.24rem;
+}

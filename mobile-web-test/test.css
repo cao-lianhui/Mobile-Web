@@ -1,0 +1,31 @@
+﻿@charset "utf-8";
+/*less的注释同样会编译到css文件中*/
+kkk a:hover {
+	color: #e92323;
+}
+/*函数mixmin*/
+.FLFR {
+	float: left;
+	float: right;
+	border-right: 1px solid #ccc;
+}
+/*嵌套样式*/
+.test {
+	color: white;
+}
+
+.test .class {
+	border: 1px solid black;
+}
+
+.test .class:hover {
+	color: red;
+}
+
+.test .class::before {
+	content: "a";
+}
+
+.color {
+	color: #e92323;
+}

@@ -1,0 +1,451 @@
+﻿body{
+    background-color:#f5f5f5;
+}
+/*设置中心容器*/
+.jd_container{
+    width:100%;
+    /*最小宽度320*/
+    /*保证网页的内容的布局*/
+    min-width:320px;
+    /*最大宽度640*/
+    /*京东设计稿为640px大小,基于设计稿,为了不失真*/
+    max-width:640px;
+    margin:0 auto;
+}
+/*顶部搜索*/
+.jd_search{
+    /*fixed基于浏览器的宽度*/
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+}
+.jd_search .jd_search_box{
+    position:relative;
+    width:100%;
+    max-width:640px;
+    min-width:320px;
+    height:60px;
+    margin:0 auto;
+    /*background:-webkit-linear-gradient(left,rgb(255,42,42),rgb(241,57,210));*/
+    background-image:-webkit-linear-gradient(top,#000,transparent);
+    /*background:rgba(216,80,92,0);*/
+}
+.jd_search .jd_search_box a{
+    position:absolute;
+    top:0;
+}
+.jd_search .jd_search_box .icon_logo{
+    display:block;
+    width:25px;
+    height:20px;
+    top:10px;
+    left:20px;
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAAAXNSR0IArs4c6QAAAHlJREFUWAnt2LEJwDAMRFE5c2ShLOKhsp69h3ISeAI1CnyBiJvA8dwcHu7+mNmrvbWdZivMHAq4dOgW7kDt65y6fiPg1AZnt8kr7haKPAgggAACfxOIskCbKdwabaaAlw0rmhaDAAIIIIBAQYA2U8CLX2kzFcB8m/kAgGUmQShl8pcAAAAASUVORK5CYII=") no-repeat;
+    background-size:25px 20px;
+}
+.jd_search .jd_search_box .login{
+    width:50px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    right:0;
+}
+.jd_search .jd_search_box form{
+    width:100%;
+    padding-left:60px;
+    padding-right:50px;
+}
+.jd_search .jd_search_box form .icon_big_logo{
+    position:absolute;
+    width:28px;
+    height:28px;
+    top:6px;
+    left:70px;
+}
+.jd_search .jd_search_box form .icon_big_logo img{
+    width:100%; 
+}
+.jd_search .jd_search_box form .icon_search{
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:10px;
+    left:120px;
+}
+.jd_search .jd_search_box form .icon_search img{
+   width:100%;
+}
+.jd_search .jd_search_box form input{
+    width:100%;
+    height:30px;
+    border-radius:15px;
+    margin-top:5px;
+    /*font-size:20px;*/
+    padding-left:84px;
+}
+
+/*轮播banner*/
+.jd_banner{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+.jd_banner ul:first-child{
+    width:1000%;
+    /*左移一张图片*/
+    transform:translateX(-10%);
+    -webkit-transform:translateX(-10%);*/
+}
+.jd_banner ul:first-child li{
+    width:10%;
+    float:left;
+}
+.jd_banner ul:first-child li a{
+    display:block;
+    width:100%;
+}
+.jd_banner ul:first-child li a img{
+    display:block;
+    width:100%;
+}
+.jd_banner ul:last-child{
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    margin-left:-59px;
+    width:118px;
+}
+.jd_banner ul:last-child li{
+    float:left;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    border:1px solid #fff;
+    margin-left:10px;
+}
+.jd_banner ul:last-child li:first-child{
+    margin-left:0;
+}
+.jd_banner ul:last-child li.selected{
+    background-color:#fff;
+}
+
+/*京东推荐recommend*/
+/*.jd_recommend{
+    width:100%;
+    height:110px;
+    background:red;
+}
+.jd_recommend .jd_showImg{
+    width:100%;
+}
+.jd_recommend .jd_showImg a img{
+    float:left;
+    width:32%;
+    height:110px;
+}*/
+
+/*导航栏nav*/
+.jd_nav{
+    width:100%;
+    background-color:#fff;
+}
+.jd_nav ul{
+    width:100%;
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+.jd_nav ul li{ 
+    float:left;
+    width:20%;
+}
+.jd_nav ul li a{
+    display:block;
+    width:100%;
+}
+.jd_nav ul li a img{
+    display:block;
+    margin:0 auto;
+    width:40px;
+    height:40px;
+}
+.jd_nav ul li a p{
+    color:#666;
+    font-size:12px;
+    padding:5px 0;
+    text-align:center;
+}
+
+/*商品区域*/
+.jd_product{
+    padding:0 5px;
+}
+.jd_Box{
+    margin-top:10px;
+    box-shadow:0 0 1px #d8d8d8;
+    min-height:160px;
+    background:#fff;
+}
+.jd_Box .pro_title{
+    overflow:hidden;
+    height:34px;
+    line-height:34px;
+    border-bottom:1px solid #ddd;
+}
+.jd_Box .pro_title.no_border{
+    border-bottom:none;
+}
+.jd_Box .pro_title .f_l a{
+    float:left;
+}
+.jd_Box .pro_title .f_l a img{
+    float:left;
+    margin-top:8px;
+    margin-left:6px;
+    width:73px;
+    height:18px;
+}
+.jd_Box .pro_title .banner_text{
+    float:left;
+    height:34px;
+    overflow:hidden;
+    margin-left:6px;
+}
+.jd_Box .pro_title .banner_text ul{
+    float:left;
+}
+.jd_Box .pro_title .banner_text li{
+    font-size:12px;
+}
+.jd_Box .pro_title .banner_text li a{
+    display:block;
+}
+.jd_Box .pro_title .banner_text a span{
+    color:#d8505c;
+    margin-right:6px;
+}
+.jd_Box .pro_title .f_r a{
+    font-size:12px;
+}
+.jd_Box .pro_title .title_img{
+    display:block;
+    margin:0px auto;
+    min-height:35px;
+    max-height:36px;
+}
+.jd_Box .pro_title .img1{
+    width:38.33333%
+}
+.jd_Box .pro_title .img2{
+    width:82%;
+}
+.content{
+    width:100%;
+}
+.content li{
+    float:left;
+    /*height:140px;*/
+}
+.content li:first-child{
+    width:50%;
+}
+.content li:first-child a img{
+    width:100%;
+}
+.content li:nth-child(n+2){
+    width:25%;
+}
+.content li:nth-child(n+2) a img{
+    width:100%;
+}
+.rightNow .f_l a:first-child strong{
+    float:left;
+    font-size:16px;
+    color:red;
+}
+.rightNow .f_l a:last-child{
+    float:left;
+}
+.rightNow .f_l a:last-child strong{
+    float:left;
+}
+.rightNow .f_l a ul{
+    float:left;
+}
+.rightNow .f_l a ul li{
+    float:left;
+}
+.rightNow .f_l a ul li:nth-child(3n){
+    margin:0 4px;
+}
+/*.rightNow .f_l a ul li:nth-child(7){
+    margin:0 4px;
+}*/
+.rightNow .f_r a{
+    font-size:12px;
+    color:red;
+}
+.rightNow .f_r a img{
+    width:11px;
+    height:11px;
+}
+.jd_price{
+    width:100%;
+}
+.jd_price ul{
+    width:100%;
+    padding:10px 0;
+}
+.jd_price ul li{
+    float:left;
+    width:25%;
+}
+.jd_price ul li a{
+    display:block;
+    width:100%;
+}
+.jd_price ul li a img{
+    width:100%;
+    height:140px;
+}
+.jd_price ul li p{
+    text-align:center;
+}
+.jd_price ul li .now_price{
+    color:red;
+}
+.jd_price ul li .old_price{
+    color:#666;
+    text-decoration:line-through;
+}
+.con-up{
+     width:100%;
+}
+.con-up .con{
+     width:50%;
+}
+.con-up .con a p{
+     text-align:center;
+}
+.con-up .con a:first-child p{
+     font-size:18px;
+}
+.con-up .con a:first-child p span{
+     display:inline-block;
+     /*background-color:black;*/
+     width:20px;
+     height:8px;
+     border-top:1px solid #000;
+}
+.con-up .con a:first-child p span:first-child{
+     margin-right:4px;
+}
+.con-up .con a:first-child p span:last-child{
+     margin-left:4px;
+}
+.con-up .con a:nth-child(2) p{
+     color:#648eff;
+     font-size:14px;
+}
+.con-up .con ul{
+     width:100%;
+     padding:6px 0;
+}
+.con-up .con ul li{
+     float:left;
+     width:50%;
+}
+.con-up .con ul li a img{
+     display:block;
+     margin:0 auto;
+     width:80%
+}
+.con-down{
+     width:100%;
+     padding:6px;
+}
+.con-down li{
+     float:left;
+     width:25%;
+}
+.con-down li a{
+     display:block;
+     width:100%;
+}
+.con-down li a p:first-child{
+     font-size:18px;
+}
+.con-down li a p:nth-child(2){
+     color:#648eff;
+}
+.con-down li a img{
+     display:block;
+     width:80%;
+     margin:0 auto;
+}
+.con-every{
+     wdith:100%;
+     padding:6px;
+}
+.con-every li{
+     float:left;
+     width:25%;
+}
+.con-every li a{
+     display:block;
+     width:100%;
+}
+.con-every li a p:first-child{
+     font-size:18px;
+}
+.con-every li:first-child a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(255,42,42),rgb(241,57,210));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(2) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(254, 133, 55), rgb(240, 43, 43));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(3) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(255, 118, 92), rgb(255, 35, 179));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(4) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(255, 42, 0), rgb(255, 0, 175));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(5) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(212, 0, 255), rgb(255, 50, 10));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(6) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(0, 194, 171), rgb(62, 148, 255));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(7) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(255, 118, 92), rgb(255, 35, 179));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li:nth-child(8) a p:first-child{
+    background:-webkit-linear-gradient(left,rgb(42, 211, 150), rgb(133, 187, 31));
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.con-every li a p:nth-child(2){
+    font-size:12px;
+}
+.con-every li img{
+     display:block;
+     width:60%;
+     margin-left:10px;
+}

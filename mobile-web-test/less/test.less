@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/*less的注释同样会编译到css文件中*/
+//双斜干注释不会编译到css文件中
+
+//less定义变量
+//1.定义变量必须以"@"符号开头
+//2."@"后不能以数字开头
+//3.不能包含特殊字符
+@mainColor:#e92322;
+@mainColor:#e92323;
+@fontSize:14px;kkk
+
+a:hover{
+   color:@mainColor;
+}
+
+/*函数mixmin*/
+.f_left(){
+   float:left;
+}
+.FL(){
+   .f_left();
+   float:right;
+}
+.border(@direct:border-right){
+   @{direct}:1px solid #ccc;
+}
+.FLFR{
+   .FL();
+   .border();
+}
+/*嵌套样式*/
+.test{
+   color:white;
+   .class{
+       border:1px solid black;
+       //&连接符
+       &:hover{
+          color:red;
+       }
+       &::before{
+          content:"a";
+       }
+   }
+}

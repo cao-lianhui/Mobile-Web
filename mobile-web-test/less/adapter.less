@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+
+//适配主流设备
+//640px 750px 移动端设计稿
+//需要设置对应基准值
+//750px设计稿  假设基准值为100px  
+//在psd图量取尺寸px 通过基准值转成rem
+
+//设备尺寸 320px、360px、375px、384px、400px、414px、424px、480px、540px、640px、720px、750px;
+//每一种设备有对应的fontSize大小
+
+//设计稿宽度
+@psdWidth:750px;
+//基准值
+@baseSize:100;
+//把常用设备的宽度放入数组中，定义数组
+@deviceWidthArr:320px,360px,375px,384px,400px,414px,424px,450px,480px,540px,640px,720px,750px;
+
+
+
+//adapter函数适配一种设备
+//.adapterFunction(@deviceWidth) {
+	//    @media (min-width: @deviceWidth){
+//        html{
+//          font-size:@deviceWidth/@psdWidth*@baseSize;
+	//
+}
+//    }
+//}
+//.adapterFunction();
+
+//适配多种设备
+//length(@deviceWidthArr),获取数组的长度
+//extract(@deviceWidthArr,1),获取数组的特定的值
+//@index为数组序号 when满足某个条件
+.adapterFunction(@index) when (@index <= length(@deviceWidthArr)) {
+	@media (min-width: extract(@deviceWidthArr,@index)){
+        html{
+          font-size:extract(@deviceWidthArr,@index)/@psdWidth*@baseSize;
+}
+    }
+    //递归调用
+.adapterFunction(@index+1);
+}
+//从一开始调用
+.adapterFunction(1);
+
+//页面主体颜色
+@mColor:#fabc09;
