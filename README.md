@@ -14,7 +14,7 @@
 
 京东商城还不能算完全的移动端自适应，因为随着屏幕大小的改变页面整体高宽可以自适应，但页面内容是固定的。没有改变
 
-下面的这个移动端页面整体内容则用了rem计算大小，less编译css文件，轮播图是用了移动端的轻量级插件zepto做的
+下面的这个移动端页面整体内容则可以自适应，用rem计算整体内容的大小，less编译css文件，轮播图是用了移动端的轻量级插件zepto.
 
 ![less.txt](https://github.com/cao-lianhui/Mobile-Web/blob/master/mobile-web-test/Less.txt)
 
